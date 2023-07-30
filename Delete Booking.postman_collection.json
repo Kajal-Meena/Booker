@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "bd1aa186-8e47-4216-a61d-45fa16f43b4d",
+		"name": "Delete Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27083084"
+	},
+	"item": [
+		{
+			"name": "Delete Basic Auth",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW46cGFzc3dvcmQxMjM=",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "{{Delete Booking}}"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Cookie",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "password123",
+						"username": "admin"
+					}
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Cookie",
+						"value": "token=9067c592d587ede",
+						"type": "text"
+					}
+				],
+				"url": "https://restful-booker.herokuapp.com/booking/2"
+			},
+			"response": []
+		}
+	]
+}
